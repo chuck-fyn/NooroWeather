@@ -21,6 +21,7 @@ struct ContentView: View {
                     MainView(viewModel: viewModel)
                 } else {
                     SearchView(viewModel: viewModel)
+                        .padding(.top, 20)
                 }
             }
             .padding(25)

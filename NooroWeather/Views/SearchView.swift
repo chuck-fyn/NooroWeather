@@ -11,7 +11,7 @@ struct SearchView: View {
     @ObservedObject var viewModel: WeatherViewModel
     
     var body: some View {
-        HStack {
+        HStack(alignment: .center) {
             if viewModel.isLoading {
                 ProgressView()
             } else {
